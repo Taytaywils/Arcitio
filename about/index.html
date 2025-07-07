@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-div">
+      
+        <!-- Hamburger button for mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      <div class="container">
+        <a href="/index/" class="logo-link">
+          <h1 class='title'>ARCITI</h1>
+          <img class="logo" src="/images/arcitio-logo-1.png" alt="Arcitio Logo">
+        </a>
+      </div>
+        <!-- Navigation menu -->
+        <nav id="menu" class="nav">
+          <a href="/">Home</a>
+          <a href="/pricing/">Packages</a>
+          <a href="/contact/">Contact Us</a>
+          <a href="/about/">About Us</a>
+        </nav>
+      
+    </header>
+  <main>
+    <h1>About our company</h1>
+<br>
+<div class="textbox-container">
+<div class="text-box center">
+I'm a computer science student at Utah Valley University and have always loved creating things, whether it be through programming apps and websites, building a business, or creating digital designs.  
+<p>My wife and I recently started our own business and found ourselves asking a question that every business owner asks, <strong>&quot;how do we reach more people?&quot;</strong> and the answer we found was simple, yet so complex -- <em><strong>a website.</strong></em>
+A website lets you put your work in one spot, your contact information right next to it, and lets you put all that information at the fingertips of the entire world.</p>
+</div>
+<h2>Your business, on the world stage.</h2>
+<div class="text-box center">
+Of course there are tricky things that come with having a website, such as SEO, domains, hosting, and so much more (if you don't know what those things are, we're your people.) We offer numerous packages to suit your needs so you can focus on managing a company, not navigating a digital world.
+</div>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Business</p>
+  </footer>
+</body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+
+      toggleButton.addEventListener('click', () => {
+        toggleButton.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    });
+  </script>
+</html>

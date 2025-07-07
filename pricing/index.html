@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Packages</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-div">
+      
+        <!-- Hamburger button for mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      <div class="container">
+        <a href="/index/" class="logo-link">
+          <h1 class='title'>ARCITI</h1>
+          <img class="logo" src="/images/arcitio-logo-1.png" alt="Arcitio Logo">
+        </a>
+      </div>
+        <!-- Navigation menu -->
+        <nav id="menu" class="nav">
+          <a href="/">Home</a>
+          <a href="/pricing/">Packages</a>
+          <a href="/contact/">Contact Us</a>
+          <a href="/about/">About Us</a>
+        </nav>
+      
+    </header>
+  <main>
+    <h1>Lets get started</h1>
+<h2><em>Packages available</em></h2>
+<br>
+<br>
+<div class="textbox-container">
+    <div class="text-box left">
+        <h3 class="item-header">Basic - $300</h3>
+        <ul>
+            <li>Simple 3-5 page website customized with your company's colors, logo, information, and photos
+            <li>You get all the files and can then connect it to your own domain and hosting service
+        </ul>
+    </div>
+    <div class="text-box right">
+        <h3 class="item-header">Basic+ - $300 + $100 per month</h3>
+        <ul>
+            <li>Simple 3-5 page website customized with your company's colors, logo, information, and photos
+            <li>We will handle the domain connection and web hosting, allowing you to fully focus on running a business, and not on running a website
+        </ul>
+    </div>
+    <div class="text-box left">
+        <h3 class="item-header">Basic Hybrid - $400</h3>
+        <ul>
+            <li>Simple 3-5 page website customized with your company's colors, logo, information, and photos
+            <li>We help setup the domain and hosting and then turn it all over to you to keep up on maintanence and hosting
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Business</p>
+  </footer>
+</body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+
+      toggleButton.addEventListener('click', () => {
+        toggleButton.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    });
+  </script>
+</html>
