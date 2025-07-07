@@ -11,27 +11,34 @@
 </head>
 <body>
     <header class="header-div">
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <nav id="menu" class="nav mobile">
+          <a href="/">Home</a>
+          <a href="/pricing/">Packages</a>
+          <a href="/contact/">Contact Us</a>
+          <a href="/about/">About Us</a>
+        </nav>
+      </div>
       
-        <!-- Hamburger button for mobile -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+            
       <div class="container">
         <a href="/index/" class="logo-link">
           <h1 class='title'>ARCITI</h1>
           <img class="logo" src="/images/arcitio-logo-1.png" alt="Arcitio Logo">
         </a>
       </div>
-        <!-- Navigation menu -->
-        <nav id="menu" class="nav">
-          <a href="/">Home</a>
-          <a href="/pricing/">Packages</a>
-          <a href="/contact/">Contact Us</a>
-          <a href="/about/">About Us</a>
-        </nav>
-      
+
+      <!-- Navigation menu -->
+      <nav id="menu" class="nav">
+        <a href="/">Home</a>
+        <a href="/pricing/">Packages</a>
+        <a href="/contact/">Contact Us</a>
+        <a href="/about/">About Us</a>
+      </nav>    
     </header>
   <main>
     <h1><em>Welcome</em> to the template site</h1>
@@ -60,15 +67,4 @@
     <p>&copy; 2025 My Business</p>
   </footer>
 </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.getElementById('menu-toggle');
-      const menu = document.getElementById('menu');
-
-      toggleButton.addEventListener('click', () => {
-        toggleButton.classList.toggle('active');
-        menu.classList.toggle('active');
-      });
-    });
-  </script>
 </html>
